@@ -11,15 +11,24 @@ function generaElemento(elementGen, classPlus) {
 }
 
 let difficulty = prompt("Scegli il tuo livello di difficoltà: basso medio alto");
-// var levels = ["basso", "medio", "alto"];
+let levels = 100;
 
-const basso = 100;
-const medio = 81;
-const alto = 49;
+if (difficulty == 'basso') {
+    levels = 100;
+}
+
+if (difficulty == 'medio') {
+    levels = 81;
+}
+
+if (difficulty == 'alto') {
+    levels = 49;
+}
+
 
 const grill = document.getElementById("container");
 
-for (let i = 0; i < difficulty; i++) {
+for (let i = 0; i < levels; i++) {
     let newElement = generaElemento("div", "square");
 
     newElement.addEventListener("click",
