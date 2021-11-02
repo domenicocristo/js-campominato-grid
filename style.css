@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 500px;
+    margin: 100px auto;
+}
+
+.square {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+.clicked-active {
+    background-color: coral;
+}
